@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" ng-app='LunchCheck'>
+  <head>
+    <title>Lunch Checker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <style>.message { font-size: 1.3em; font-weight: bold; }</style>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <h1>Lunch Check</h1>
+    <div ng-controller='LunchCheckController'>
+        <input type="text" ng-model="items" />
+        <button ng-click="checkLunch()">Check If Too Much</button>
+        <br>
+        {{message}}
+    </div>
+  </body>
+</html>
