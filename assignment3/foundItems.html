@@ -1,0 +1,12 @@
+<div class="table">
+  <ol>
+    <li ng-repeat="item in menu.items">
+      <b>{{ item.name }} ({{ item.short_name }})</b>
+      <br>
+      {{ item.description }}
+      <br>
+      <button ng-click="menu.onRemove({index: $index});">Don't want this one!</button>
+    </li>
+  </ol>
+  <div ng-if="menu.error">Nothing found</div>
+</div>
