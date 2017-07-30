@@ -2,5 +2,7 @@
   <li ng-repeat="item in $ctrl.items"
       ui-sref="items({itemId: item.short_name})">
     {{ item.short_name }} : {{ item.name }}
+    <br>
+    {{ item.special_instructions }}
   </li>
 </ul>
